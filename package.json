@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "description": "River AI signup lane on GitHub Actions (ciphertext-only artifacts)",
   "dependencies": {
-    "playwright-core": "1.63.0"
+    "playwright-core": "^1.63.0"
   }
 }
