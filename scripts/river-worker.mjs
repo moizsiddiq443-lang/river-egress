@@ -205,7 +205,8 @@ async function runSignup(payload) {
       await typeInto(page, 'input[name="last_name"]', last);
       await typeInto(page, 'input[type="email"]', email, jitter(20, 50));
       await sleep(jitter(800, 1600));
-      const clicked = (await clickText(page, 'continue|sign up|got it')) || ((await jsClick(page, 'continue|sign up|got it')) !== 'none');
+      let clicked = (await clickText(page, 'continue|sign up|got it')) || ((await jsClick(page, 'continue|sign up|got it')) !== 'none');
+      if (!clicked) { try { await page.keyboard.press('Enter'); clicked = true; log('submit via Enter fallback'); } catch {} }
       log('signup form submitted (' + clicked + ')');
       await shot(page, n, '2-signup');
     } else {
@@ -255,7 +256,8 @@ async function runSignup(payload) {
         const cnt = await page.evaluate(() => document.querySelectorAll('input[type="password"]').length);
         if (Number(cnt) > 1) await typeInto(page, 'input[type="password"] >> nth=1', PASSWORD);
         await sleep(jitter(900, 2000));
-        const ok = (await clickText(page, 'continue|create|sign up')) || ((await jsClick(page, 'continue|create|sign up')) !== 'none');
+        let ok = (await clickText(page, 'continue|create|sign up')) || ((await jsClick(page, 'continue|create|sign up')) !== 'none');
+        if (!ok) { try { await page.keyboard.press('Enter'); ok = true; log('password submit via Enter fallback'); } catch {} }
         pwDone = true;
         log('password submitted (' + ok + ')');
         await sleep(4500);
