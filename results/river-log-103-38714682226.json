@@ -1,0 +1,22 @@
+{
+ "n": 103,
+ "status": "timeout",
+ "run": "38714682226",
+ "started": "2026-10-15T09:41:14.164Z",
+ "ms": 360458,
+ "steps": [
+  "[2026-10-15T09:41:14.164Z] worker mode=signup run=38714682226 cookies=set",
+  "[2026-10-15T09:41:14.168Z] signup start — n=103 alias=ano***@gmail.com (password generated in-run)",
+  "[2026-10-15T09:41:32.810Z] landing: https://login.console.river.ai/sign-up?client_id=client_01M0TG5W3GBNMFS87K40PYHM98&redirect_uri=https%3A%2F%2Fconsole.river.ai%2Fauth%2Fcallback&authorization_session_id=01M4ZF08BM3CTJFQJ8DN2BKP6M",
+  "[2026-10-15T09:41:32.880Z] wrote results/river-103-1-landing.png.enc",
+  "[2026-10-15T09:41:37.672Z] signup form submitted (true)",
+  "[2026-10-15T09:41:37.729Z] wrote results/river-103-2-signup.png.enc",
+  "[2026-10-15T09:41:48.753Z] password submitted (true)",
+  "[2026-10-15T09:41:55.457Z] otp-page",
+  "[2026-10-15T09:44:29.859Z]   [gmail] RESULT: null",
+  "[2026-10-15T09:44:36.068Z] otp-page",
+  "[2026-10-15T09:47:10.560Z]   [gmail] RESULT: null",
+  "[2026-10-15T09:47:14.621Z] wrote results/river-103-8-final.png.enc",
+  "[2026-10-15T09:47:14.622Z] wrote results/river-result-103-38714682226.enc"
+ ]
+}
