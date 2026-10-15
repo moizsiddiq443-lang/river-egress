@@ -1,0 +1,25 @@
+{
+ "n": 4,
+ "status": "radar-sms-challenge",
+ "run": "38707126729",
+ "started": "2026-10-15T08:39:13.123Z",
+ "ms": 53622,
+ "steps": [
+  "[2026-10-15T08:39:13.123Z] worker mode=signup run=38707126729 cookies=set",
+  "[2026-10-15T08:39:13.125Z] signup start — n=4 alias=jud***@duck.com (password generated in-run)",
+  "[2026-10-15T08:39:30.104Z] landing: https://login.console.river.ai/sign-up?client_id=client_01M0TG5W3GBNMFS87K40PYHM98&redirect_uri=https%3A%2F%2Fconsole.river.ai%2Fauth%2Fcallback&authorization_session_id=01M4ZBEMQV3GBKZ66B0GSF0G54",
+  "[2026-10-15T08:39:30.151Z] wrote results/river-4-1-landing.png.enc",
+  "[2026-10-15T08:39:34.257Z] signup form submitted (true)",
+  "[2026-10-15T08:39:34.286Z] wrote results/river-4-2-signup.png.enc",
+  "[2026-10-15T08:39:43.379Z] password submitted (true)",
+  "[2026-10-15T08:39:50.088Z] otp-page",
+  "[2026-10-15T08:39:58.695Z]   [gmail] MATCH no-***@duck.com | Verify your email address | 2026-10-15T08:39:47Z | phrased codes: ['570395', '570395']",
+  "[2026-10-15T08:39:58.695Z]   [gmail] RESULT: {\"code\": \"570395\", \"codes\": [\"570395\", \"570395\", \"570395\"], \"link\": null, \"from\": \"no-***@duck.com\", \"title\": \"Ver",
+  "[2026-10-15T08:39:58.696Z] otp matched (from no-***@duck.com)",
+  "[2026-10-15T08:40:04.483Z] wrote results/river-4-4-otp.png.enc",
+  "[2026-10-15T08:40:06.687Z] RADAR CHALLENGE url=https://login.console.river.ai/radar-challenge/send?user_id=user_01M4ZBF7VKAAXHHA43WN62YKAK&redirect_uri=https%3A%2F%2Fc",
+  "[2026-10-15T08:40:06.713Z] wrote results/river-4-3-radar.png.enc",
+  "[2026-10-15T08:40:06.745Z] wrote results/river-4-8-final.png.enc",
+  "[2026-10-15T08:40:06.745Z] wrote results/river-result-4-38707126729.enc"
+ ]
+}
