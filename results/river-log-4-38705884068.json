@@ -1,0 +1,17 @@
+{
+ "n": 4,
+ "status": "timeout",
+ "run": "38705884068",
+ "started": "2026-10-15T08:28:57.015Z",
+ "ms": 325991,
+ "steps": [
+  "[2026-10-15T08:28:57.016Z] worker mode=signup run=38705884068 cookies=set",
+  "[2026-10-15T08:28:57.020Z] signup start — n=4 alias=jud***@duck.com (password generated in-run)",
+  "[2026-10-15T08:29:16.751Z] landing: https://login.console.river.ai/sign-up?client_id=client_01M0TG5W3GBNMFS87K40PYHM98&redirect_uri=https%3A%2F%2Fconsole.river.ai%2Fauth%2Fcallback&authorization_session_id=01M4ZAVXMRAW6NFWKYEEGCWK95",
+  "[2026-10-15T08:29:16.819Z] wrote results/river-4-1-landing.enc",
+  "[2026-10-15T08:29:20.900Z] signup form submitted (false)",
+  "[2026-10-15T08:29:20.960Z] wrote results/river-4-2-signup.enc",
+  "[2026-10-15T08:34:23.005Z] wrote results/river-4-8-final.enc",
+  "[2026-10-15T08:34:23.006Z] wrote results/river-result-4-38705884068.enc"
+ ]
+}
