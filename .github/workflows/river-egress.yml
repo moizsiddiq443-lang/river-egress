@@ -1,0 +1,69 @@
+# river-egress — River AI signup lane on GitHub Actions (fresh device + fresh IP per run).
+# Confidentiality by design (same doctrine as gonkagate/grok/mistral egress repos):
+#   - dispatch payload is AES-256-GCM ciphertext (key = sha256(ENC_KEY repo secret))
+#   - results are envelope-encrypted AES-256-GCM + RSA-4096-OAEP to river-public.pem
+#     (only the local holder of river-private.pem can decrypt)
+#   - password is generated IN-RUN; logs are redacted; screenshots are encrypted too
+# Public repo contains ONLY scripts + ciphertext.
+
+name: river-egress
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "mailtest | signup"
+        required: true
+        default: "mailtest"
+        type: string
+      payload:
+        description: "encrypted signup payload {n,email,first,last} (b64 AES envelope)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency: river-egress
+
+jobs:
+  egress:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps (playwright chromium + curl_cffi + xvfb)
+        run: |
+          npm i playwright-core@1.63.0
+          npx --yes playwright@1.63.0 install --with-deps chromium
+          python3 -m pip install --quiet curl_cffi
+          command -v xvfb-run >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y xvfb)
+
+      - name: Run river worker
+        env:
+          ENC_KEY: ${{ secrets.ENC_KEY }}
+          GMAIL_CK: ${{ secrets.GMAIL_CK }}
+        run: |
+          xvfb-run -a node scripts/river-worker.mjs "${{ github.event.inputs.mode }}" "${{ github.event.inputs.payload }}"
+
+      - name: Commit encrypted results
+        if: always()
+        run: |
+          git config user.name "river-worker"
+          git config user.email "worker@localhost"
+          git add -A
+          git commit -m "river-egress: results $(date -u +%Y-%m-%dT%H:%M:%SZ) run=${{ github.run_id }}" || echo "nothing to commit"
+          for i in 1 2 3 4 5; do
+            git pull --rebase 2>/dev/null || true
+            if git push; then echo "push ok (attempt $i)"; break; fi
+            echo "push failed (attempt $i) — retrying"
+            sleep 5
+          done
