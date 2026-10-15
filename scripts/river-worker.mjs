@@ -131,13 +131,13 @@ async function pageState(page) {
 }
 async function jsClick(page, re) {
   return page.evaluate((src) => {
-    const re2 = new RegExp(src);
+    const re2 = new RegExp(src, 'i');
     const els = Array.from(document.querySelectorAll('a,button')).filter((x) => { const tt = (x.innerText || '').trim(); return tt && tt.length < 70 && re2.test(tt) && x.offsetWidth > 0; });
     const el = els[0]; if (!el) return 'none'; el.click(); return 'jsclick:' + (el.innerText || '').trim().slice(0, 40);
   }, re);
 }
 async function shot(page, n, label) {
-  try { const b = await page.screenshot({ type: 'png' }); writeEnc(`river-${n}-${label}`, b); } catch {}
+  try { const b = await page.screenshot({ type: 'png' }); writeEnc(`river-${n}-${label}.png`, b); } catch {}
 }
 async function typeInto(page, sel, text, delay) {
   await page.bringToFront();
@@ -148,7 +148,7 @@ async function typeInto(page, sel, text, delay) {
 }
 async function clickText(page, re) {
   const r = await page.evaluate((src) => {
-    const re2 = new RegExp(src);
+    const re2 = new RegExp(src, 'i');
     const el = Array.from(document.querySelectorAll('button,a')).filter((e) => re2.test((e.innerText || '').trim()) && e.offsetWidth > 0)[0];
     if (!el) return null; el.scrollIntoView({ block: 'center' });
     const r = el.getBoundingClientRect(); return JSON.stringify({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
