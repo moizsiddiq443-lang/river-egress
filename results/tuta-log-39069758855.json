@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069758855",
+ "started": "2026-10-17T21:10:20.291Z",
+ "ms": 47078,
+ "steps": [
+  "[2026-10-17T21:10:20.291Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:30.023Z] chromium up",
+  "[2026-10-17T21:11:07.369Z] wrote results/tuta-result-vira.romaniuk-39069758855.enc",
+  "[2026-10-17T21:11:07.369Z] status=LIVE(review) ms=47077"
+ ]
+}
