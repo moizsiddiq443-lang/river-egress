@@ -1,0 +1,12 @@
+{
+ "status": "fail:captcha dialog missing",
+ "run": "39074932686",
+ "started": "2026-10-17T22:25:31.116Z",
+ "ms": 82535,
+ "steps": [
+  "[2026-10-17T22:25:31.118Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T22:25:40.091Z] chromium up",
+  "[2026-10-17T22:26:53.650Z] wrote results/tuta-result-marta.yavorska-39074932686.enc",
+  "[2026-10-17T22:26:53.651Z] FAIL captcha dialog missing"
+ ]
+}
