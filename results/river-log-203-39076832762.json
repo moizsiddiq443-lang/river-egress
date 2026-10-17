@@ -1,0 +1,27 @@
+{
+ "n": 203,
+ "status": "radar-sms-challenge",
+ "run": "39076832762",
+ "started": "2026-10-17T22:53:21.910Z",
+ "ms": 204172,
+ "steps": [
+  "[2026-10-17T22:53:21.911Z] worker mode=signup run=39076832762 cookies=set",
+  "[2026-10-17T22:53:21.914Z] signup start — n=203 alias=dan***@certustender.com (password generated in-run)",
+  "[2026-10-17T22:53:41.143Z] landing: https://login.console.river.ai/sign-up?client_id=client_01M0TG5W3GBNMFS87K40PYHM98&redirect_uri=https%3A%2F%2Fconsole.river.ai%2Fauth%2Fcallback&authorization_session_id=01M561483BQ0WVS6JX580TGCY8",
+  "[2026-10-17T22:53:41.268Z] wrote results/river-203-1-landing.png.enc",
+  "[2026-10-17T22:53:45.523Z] signup form submitted (true)",
+  "[2026-10-17T22:53:45.583Z] wrote results/river-203-2-signup.png.enc",
+  "[2026-10-17T22:53:53.104Z] password submitted (true)",
+  "[2026-10-17T22:53:59.811Z] otp-page",
+  "[2026-10-17T22:56:30.928Z]   [gmail] RESULT: null",
+  "[2026-10-17T22:56:37.136Z] otp-page",
+  "[2026-10-17T22:56:37.945Z]   [gmail] MATCH River Console <no-reply@email.river.ai> | Verify your email address | 1792277635.0",
+  "[2026-10-17T22:56:37.945Z]   [gmail] RESULT: {\"code\": \"270190\", \"codes\": [\"270190\", \"204394\", \"103281\", \"270190\", \"270190\"], \"link\": null, \"from\": \"River Console <no-reply@email.river.ai>\", \"title\"",
+  "[2026-10-17T22:56:37.945Z] otp matched (from River Console <no-reply@email.river.ai>)",
+  "[2026-10-17T22:56:43.766Z] wrote results/river-203-4-otp.png.enc",
+  "[2026-10-17T22:56:45.970Z] RADAR CHALLENGE url=https://login.console.river.ai/radar-challenge/send?user_id=user_01M5614PFWZFQAQ0009QX3K94P&redirect_uri=https%3A%2F%2Fc",
+  "[2026-10-17T22:56:46.025Z] wrote results/river-203-3-radar.png.enc",
+  "[2026-10-17T22:56:46.081Z] wrote results/river-203-8-final.png.enc",
+  "[2026-10-17T22:56:46.081Z] wrote results/river-result-203-39076832762.enc"
+ ]
+}
