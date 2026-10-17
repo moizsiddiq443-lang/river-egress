@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069370860",
+ "started": "2026-10-17T21:04:45.069Z",
+ "ms": 57732,
+ "steps": [
+  "[2026-10-17T21:04:45.070Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:04:54.221Z] chromium up",
+  "[2026-10-17T21:05:42.801Z] wrote results/tuta-result-anastasiya.hlushko-39069370860.enc",
+  "[2026-10-17T21:05:42.801Z] status=LIVE(review) ms=57731"
+ ]
+}
