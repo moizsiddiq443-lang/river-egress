@@ -1,0 +1,12 @@
+{
+ "status": "fail:captcha dialog missing",
+ "run": "39069718587",
+ "started": "2026-10-17T21:09:46.994Z",
+ "ms": 127613,
+ "steps": [
+  "[2026-10-17T21:09:46.994Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:09.004Z] chromium up",
+  "[2026-10-17T21:11:54.606Z] wrote results/tuta-result-zoryana.moroz-39069718587.enc",
+  "[2026-10-17T21:11:54.607Z] FAIL captcha dialog missing"
+ ]
+}
