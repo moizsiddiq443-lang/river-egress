@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069376917",
+ "started": "2026-10-17T21:04:51.039Z",
+ "ms": 58437,
+ "steps": [
+  "[2026-10-17T21:04:51.040Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:05:02.287Z] chromium up",
+  "[2026-10-17T21:05:49.475Z] wrote results/tuta-result-bohdana.litvin-39069376917.enc",
+  "[2026-10-17T21:05:49.476Z] status=LIVE(review) ms=58435"
+ ]
+}
