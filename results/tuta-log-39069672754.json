@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069672754",
+ "started": "2026-10-17T21:09:00.470Z",
+ "ms": 50673,
+ "steps": [
+  "[2026-10-17T21:09:00.471Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:09:11.089Z] chromium up",
+  "[2026-10-17T21:09:51.142Z] wrote results/tuta-result-lidiya.romaniuk-39069672754.enc",
+  "[2026-10-17T21:09:51.142Z] status=LIVE(review) ms=50671"
+ ]
+}
