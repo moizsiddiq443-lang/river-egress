@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069364033",
+ "started": "2026-10-17T21:04:40.387Z",
+ "ms": 57444,
+ "steps": [
+  "[2026-10-17T21:04:40.388Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:04:55.313Z] chromium up",
+  "[2026-10-17T21:05:37.831Z] wrote results/tuta-result-khrystyna.sydorenko-39069364033.enc",
+  "[2026-10-17T21:05:37.831Z] status=LIVE(review) ms=57443"
+ ]
+}
