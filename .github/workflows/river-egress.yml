@@ -25,7 +25,7 @@ on:
 permissions:
   contents: write
 
-concurrency: river-egress
+concurrency: river-egress-${{ github.run_id }}
 
 jobs:
   egress:
