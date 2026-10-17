@@ -1,0 +1,12 @@
+{
+ "status": "fail:captcha dialog missing",
+ "run": "39074837437",
+ "started": "2026-10-17T22:23:29.074Z",
+ "ms": 98675,
+ "steps": [
+  "[2026-10-17T22:23:29.075Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T22:23:53.833Z] chromium up",
+  "[2026-10-17T22:25:07.749Z] wrote results/tuta-result-iryna.panchenko-39074837437.enc",
+  "[2026-10-17T22:25:07.749Z] FAIL captcha dialog missing"
+ ]
+}
