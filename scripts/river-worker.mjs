@@ -10,6 +10,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 
+const PYEXE = (() => { try { return spawnSync('python3', ['--version'], { encoding: 'utf8' }).error ? 'python' : 'python3'; } catch { return 'python'; } })();
 const MODE = process.argv[2] || 'mailtest';
 const PAYLOAD_B64 = process.argv[3] || '';
 const ENC_KEY = process.env.ENC_KEY || '';
@@ -72,11 +73,11 @@ function writeCookies() {
   return true;
 }
 function gmProbe() {
-  const r = spawnSync('python3', ['scripts/river-gm-poll.py', '--ck', CK_PATH, '--probe'], { encoding: 'utf8', timeout: 90000 });
+  const r = spawnSync(PYEXE, ['scripts/river-gm-poll.py', '--ck', CK_PATH, '--probe'], { encoding: 'utf8', timeout: 90000 });
   return String(r.stdout || '') + String(r.stderr || '');
 }
 function gmPoll(to, sinceISO, timeoutSec) {
-  const r = spawnSync('python3', ['scripts/river-gm-poll.py', '--ck', CK_PATH, '--to', to, '--since', sinceISO, '--timeout', String(timeoutSec)], { encoding: 'utf8', timeout: (timeoutSec + 45) * 1000 });
+  const r = spawnSync(PYEXE, ['scripts/river-gm-poll.py', '--ck', CK_PATH, '--to', to, '--since', sinceISO, '--timeout', String(timeoutSec)], { encoding: 'utf8', timeout: (timeoutSec + 45) * 1000 });
   const out = String(r.stdout || '') + String(r.stderr || '');
   for (const line of out.split(/\r?\n/)) if (line.trim() && /MATCH|RESULT|err|PROBE/.test(line)) log('  [gmail] ' + line.trim().slice(0, 160));
   const m = out.match(/RESULT: (\{.*\})/);
