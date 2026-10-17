@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069343442",
+ "started": "2026-10-17T21:04:28.237Z",
+ "ms": 76478,
+ "steps": [
+  "[2026-10-17T21:04:28.238Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:04:55.664Z] chromium up",
+  "[2026-10-17T21:05:44.715Z] wrote results/tuta-result-nina.zadorozhna-39069343442.enc",
+  "[2026-10-17T21:05:44.715Z] status=LIVE(review) ms=76476"
+ ]
+}
