@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069746366",
+ "started": "2026-10-17T21:10:16.873Z",
+ "ms": 68423,
+ "steps": [
+  "[2026-10-17T21:10:16.873Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:41.629Z] chromium up",
+  "[2026-10-17T21:11:25.296Z] wrote results/tuta-result-lilia.herasym-39069746366.enc",
+  "[2026-10-17T21:11:25.296Z] status=LIVE(review) ms=68421"
+ ]
+}
