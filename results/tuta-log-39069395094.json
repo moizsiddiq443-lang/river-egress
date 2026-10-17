@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069395094",
+ "started": "2026-10-17T21:05:17.032Z",
+ "ms": 51573,
+ "steps": [
+  "[2026-10-17T21:05:17.033Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:05:27.463Z] chromium up",
+  "[2026-10-17T21:06:08.604Z] wrote results/tuta-result-polina.demchenko-39069395094.enc",
+  "[2026-10-17T21:06:08.605Z] status=LIVE(review) ms=51571"
+ ]
+}
