@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069701170",
+ "started": "2026-10-17T21:09:22.882Z",
+ "ms": 57186,
+ "steps": [
+  "[2026-10-17T21:09:22.883Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:09:31.442Z] chromium up",
+  "[2026-10-17T21:10:20.068Z] wrote results/tuta-result-solomiya.grytsenko-39069701170.enc",
+  "[2026-10-17T21:10:20.068Z] status=LIVE(review) ms=57184"
+ ]
+}
