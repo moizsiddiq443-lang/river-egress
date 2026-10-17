@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069723899",
+ "started": "2026-10-17T21:09:43.747Z",
+ "ms": 65104,
+ "steps": [
+  "[2026-10-17T21:09:43.747Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:07.561Z] chromium up",
+  "[2026-10-17T21:10:48.851Z] wrote results/tuta-result-halyna.bondar-39069723899.enc",
+  "[2026-10-17T21:10:48.851Z] status=LIVE(review) ms=65102"
+ ]
+}
