@@ -1,0 +1,12 @@
+{
+ "status": "fail:captcha dialog missing",
+ "run": "39074876211",
+ "started": "2026-10-17T22:24:08.168Z",
+ "ms": 87867,
+ "steps": [
+  "[2026-10-17T22:24:08.169Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T22:24:22.297Z] chromium up",
+  "[2026-10-17T22:25:36.034Z] wrote results/tuta-result-zhanna.ostapenko-39074876211.enc",
+  "[2026-10-17T22:25:36.035Z] FAIL captcha dialog missing"
+ ]
+}
