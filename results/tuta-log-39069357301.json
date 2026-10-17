@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069357301",
+ "started": "2026-10-17T21:04:37.113Z",
+ "ms": 63966,
+ "steps": [
+  "[2026-10-17T21:04:37.114Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:04:57.703Z] chromium up",
+  "[2026-10-17T21:05:41.079Z] wrote results/tuta-result-yustyna.bilyk-39069357301.enc",
+  "[2026-10-17T21:05:41.079Z] status=LIVE(review) ms=63965"
+ ]
+}
