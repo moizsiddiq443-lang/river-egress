@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069684883",
+ "started": "2026-10-17T21:09:11.149Z",
+ "ms": 48783,
+ "steps": [
+  "[2026-10-17T21:09:11.150Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:09:19.217Z] chromium up",
+  "[2026-10-17T21:09:59.931Z] wrote results/tuta-result-vira.lysenko-39069684883.enc",
+  "[2026-10-17T21:09:59.931Z] status=LIVE(review) ms=48781"
+ ]
+}
