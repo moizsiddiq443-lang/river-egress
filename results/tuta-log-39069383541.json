@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069383541",
+ "started": "2026-10-17T21:05:02.970Z",
+ "ms": 60808,
+ "steps": [
+  "[2026-10-17T21:05:02.971Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:05:21.110Z] chromium up",
+  "[2026-10-17T21:06:03.778Z] wrote results/tuta-result-emiliya.shulha-39069383541.enc",
+  "[2026-10-17T21:06:03.778Z] status=LIVE(review) ms=60806"
+ ]
+}
