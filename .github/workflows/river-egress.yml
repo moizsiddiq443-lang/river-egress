@@ -52,7 +52,11 @@ jobs:
           ENC_KEY: ${{ secrets.ENC_KEY }}
           GMAIL_CK: ${{ secrets.GMAIL_CK }}
         run: |
-          xvfb-run -a node scripts/river-worker.mjs "${{ github.event.inputs.mode }}" "${{ github.event.inputs.payload }}"
+          if [ "${{ github.event.inputs.mode }}" = "tuta-signup" ]; then
+            xvfb-run -a node scripts/tuta-signup.mjs "${{ github.event.inputs.payload }}"
+          else
+            xvfb-run -a node scripts/river-worker.mjs "${{ github.event.inputs.mode }}" "${{ github.event.inputs.payload }}"
+          fi
 
       - name: Commit encrypted results
         if: always()
