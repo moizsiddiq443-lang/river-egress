@@ -51,6 +51,7 @@ jobs:
         env:
           ENC_KEY: ${{ secrets.ENC_KEY }}
           GMAIL_CK: ${{ secrets.GMAIL_CK }}
+          GMAIL_APP_PW: ${{ secrets.GMAIL_APP_PW }}
         run: |
           if [ "${{ github.event.inputs.mode }}" = "tuta-signup" ]; then
             xvfb-run -a node scripts/tuta-signup.mjs "${{ github.event.inputs.payload }}"
