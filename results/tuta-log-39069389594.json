@@ -1,0 +1,10 @@
+{
+ "status": "no-cdp",
+ "run": "39069389594",
+ "started": "2026-10-17T21:05:03.247Z",
+ "ms": 32127,
+ "steps": [
+  "[2026-10-17T21:05:03.248Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:05:35.373Z] chromium CDP never came up"
+ ]
+}
