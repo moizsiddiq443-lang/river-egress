@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069752006",
+ "started": "2026-10-17T21:10:07.791Z",
+ "ms": 42009,
+ "steps": [
+  "[2026-10-17T21:10:07.793Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:09.724Z] chromium up",
+  "[2026-10-17T21:10:49.799Z] wrote results/tuta-result-oksana.dovhan-39069752006.enc",
+  "[2026-10-17T21:10:49.799Z] status=LIVE(review) ms=42007"
+ ]
+}
