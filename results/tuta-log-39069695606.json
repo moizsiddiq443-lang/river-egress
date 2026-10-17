@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069695606",
+ "started": "2026-10-17T21:09:24.140Z",
+ "ms": 64370,
+ "steps": [
+  "[2026-10-17T21:09:24.140Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:09:45.896Z] chromium up",
+  "[2026-10-17T21:10:28.509Z] wrote results/tuta-result-yaryna.savchenko-39069695606.enc",
+  "[2026-10-17T21:10:28.510Z] status=LIVE(review) ms=64368"
+ ]
+}
