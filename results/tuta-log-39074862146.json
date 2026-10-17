@@ -1,0 +1,12 @@
+{
+ "status": "fail:captcha dialog missing",
+ "run": "39074862146",
+ "started": "2026-10-17T22:23:48.812Z",
+ "ms": 91029,
+ "steps": [
+  "[2026-10-17T22:23:48.813Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T22:24:05.949Z] chromium up",
+  "[2026-10-17T22:25:19.840Z] wrote results/tuta-result-diana.pavlenko-39074862146.enc",
+  "[2026-10-17T22:25:19.840Z] FAIL captcha dialog missing"
+ ]
+}
