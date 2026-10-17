@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39068924569",
+ "started": "2026-10-17T20:58:32.608Z",
+ "ms": 55005,
+ "steps": [
+  "[2026-10-17T20:58:32.610Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T20:58:40.056Z] chromium up",
+  "[2026-10-17T20:59:27.613Z] wrote results/tuta-result-kseniya.marchenko-39068924569.enc",
+  "[2026-10-17T20:59:27.613Z] status=LIVE(review) ms=55004"
+ ]
+}
