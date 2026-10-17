@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069712404",
+ "started": "2026-10-17T21:09:33.060Z",
+ "ms": 68806,
+ "steps": [
+  "[2026-10-17T21:09:33.061Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:09:59.302Z] chromium up",
+  "[2026-10-17T21:10:41.865Z] wrote results/tuta-result-daryna.tkachuk-39069712404.enc",
+  "[2026-10-17T21:10:41.866Z] status=LIVE(review) ms=68804"
+ ]
+}
