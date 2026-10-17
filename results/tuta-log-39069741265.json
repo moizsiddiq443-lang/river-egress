@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069741265",
+ "started": "2026-10-17T21:09:57.668Z",
+ "ms": 54687,
+ "steps": [
+  "[2026-10-17T21:09:57.670Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:12.278Z] chromium up",
+  "[2026-10-17T21:10:52.355Z] wrote results/tuta-result-nadia.bondarenko-39069741265.enc",
+  "[2026-10-17T21:10:52.355Z] status=LIVE(review) ms=54685"
+ ]
+}
