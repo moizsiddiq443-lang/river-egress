@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069706707",
+ "started": "2026-10-17T21:09:31.715Z",
+ "ms": 67471,
+ "steps": [
+  "[2026-10-17T21:09:31.716Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:09:55.649Z] chromium up",
+  "[2026-10-17T21:10:39.186Z] wrote results/tuta-result-ruslana.stets-39069706707.enc",
+  "[2026-10-17T21:10:39.186Z] status=LIVE(review) ms=67469"
+ ]
+}
