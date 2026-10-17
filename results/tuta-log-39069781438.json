@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069781438",
+ "started": "2026-10-17T21:10:40.365Z",
+ "ms": 54096,
+ "steps": [
+  "[2026-10-17T21:10:40.366Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:57.596Z] chromium up",
+  "[2026-10-17T21:11:34.460Z] wrote results/tuta-result-daryna.roiko-39069781438.enc",
+  "[2026-10-17T21:11:34.461Z] status=LIVE(review) ms=54094"
+ ]
+}
