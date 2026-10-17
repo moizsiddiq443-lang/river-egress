@@ -1,0 +1,12 @@
+{
+ "status": "LIVE(review)",
+ "run": "39069735554",
+ "started": "2026-10-17T21:09:51.580Z",
+ "ms": 55202,
+ "steps": [
+  "[2026-10-17T21:09:51.581Z] chromium: /usr/bin/chromium",
+  "[2026-10-17T21:10:08.523Z] chromium up",
+  "[2026-10-17T21:10:46.782Z] wrote results/tuta-result-sofia.kravets-39069735554.enc",
+  "[2026-10-17T21:10:46.782Z] status=LIVE(review) ms=55201"
+ ]
+}
